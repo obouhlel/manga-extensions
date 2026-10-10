@@ -620,6 +620,27 @@
         ]
       },
       {
+        "name": "Aniverse",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.aniverse",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/9f79b89/tachiyomi-fr.aniverse-v1.6.1.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/aniverse/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/9f79b89/tachiyomi-fr.aniverse-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "4821794959228633650",
+            "name": "Aniverse",
+            "language": "fr",
+            "homeUrl": "https://aniverse.fr"
+          }
+        ]
+      },
+      {
         "name": "AralosBD",
         "packageName": "eu.kanade.tachiyomi.extension.fr.aralosbd",
         "resources": {
@@ -812,13 +833,13 @@
         "name": "Epsilon Scan",
         "packageName": "eu.kanade.tachiyomi.extension.fr.epsilonscan",
         "resources": {
-          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.epsilonscan-v1.4.56.apk",
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/9f79b89/tachiyomi-fr.epsilonscan-v1.6.1.apk",
           "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/epsilonscan/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.epsilonscan-v1.4.56.jar"
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/9f79b89/tachiyomi-fr.epsilonscan-v1.6.1.jar"
         },
-        "extensionLib": "1.4",
-        "versionCode": "104056",
-        "versionName": "1.4.56",
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -1001,9 +1022,9 @@
         "name": "Japscan",
         "packageName": "eu.kanade.tachiyomi.extension.fr.japscan",
         "resources": {
-          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.japscan-v1.6.1.apk",
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/9f79b89/tachiyomi-fr.japscan-v1.6.1.apk",
           "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/japscan/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.japscan-v1.6.1.jar"
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/9f79b89/tachiyomi-fr.japscan-v1.6.1.jar"
         },
         "extensionLib": "1.6",
         "versionCode": "106001",
@@ -1316,9 +1337,9 @@
         "name": "Ono",
         "packageName": "eu.kanade.tachiyomi.extension.fr.ono",
         "resources": {
-          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.ono-v1.6.0.apk",
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/9f79b89/tachiyomi-fr.ono-v1.6.0.apk",
           "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/ono/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.ono-v1.6.0.jar"
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/9f79b89/tachiyomi-fr.ono-v1.6.0.jar"
         },
         "extensionLib": "1.6",
         "versionCode": "106000",
@@ -1505,14 +1526,14 @@
         "name": "Scan-Manga",
         "packageName": "eu.kanade.tachiyomi.extension.fr.scanmanga",
         "resources": {
-          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.scanmanga-v1.4.23.apk",
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/9f79b89/tachiyomi-fr.scanmanga-v1.6.0.apk",
           "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/scanmanga/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.scanmanga-v1.4.23.jar"
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/9f79b89/tachiyomi-fr.scanmanga-v1.6.0.jar"
         },
-        "extensionLib": "1.4",
-        "versionCode": "104023",
-        "versionName": "1.4.23",
-        "contentWarning": "CONTENT_WARNING_NSFW",
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
             "id": "2062108502806113139",
@@ -1652,13 +1673,13 @@
         "name": "Soft Epsilon Scan",
         "packageName": "eu.kanade.tachiyomi.extension.fr.softepsilonscan",
         "resources": {
-          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.softepsilonscan-v1.4.56.apk",
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/9f79b89/tachiyomi-fr.softepsilonscan-v1.6.1.apk",
           "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/softepsilonscan/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.softepsilonscan-v1.4.56.jar"
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/9f79b89/tachiyomi-fr.softepsilonscan-v1.6.1.jar"
         },
-        "extensionLib": "1.4",
-        "versionCode": "104056",
-        "versionName": "1.4.56",
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
