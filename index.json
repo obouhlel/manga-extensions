@@ -1,1 +1,1800 @@
-{}
+{
+  "name": "Manga Extensions",
+  "badgeLabel": "OB",
+  "signingKey": "15165a4191c72f0d0649223dd09f462a8416834dd4595af938f41c2f7ef9b13f",
+  "contact": {
+    "website": "https://github.com/obouhlel/manga-extensions"
+  },
+  "extensionList": {
+    "extensions": [
+      {
+        "name": "MangaDex",
+        "packageName": "eu.kanade.tachiyomi.extension.all.mangadex",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-all.mangadex-v1.6.0.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/all/mangadex/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-all.mangadex-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "4638673959522768501",
+            "name": "MangaDex",
+            "language": "af",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "987803387023224960",
+            "name": "MangaDex",
+            "language": "sq",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "3339599426223341161",
+            "name": "MangaDex",
+            "language": "ar",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "9127464796236242233",
+            "name": "MangaDex",
+            "language": "az",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "1553736397938752611",
+            "name": "MangaDex",
+            "language": "eu",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "3601180820582582605",
+            "name": "MangaDex",
+            "language": "be",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "4150470519566206911",
+            "name": "MangaDex",
+            "language": "bn",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "5463447640980279236",
+            "name": "MangaDex",
+            "language": "bg",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "1347402746269051958",
+            "name": "MangaDex",
+            "language": "my",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "5860541308324630662",
+            "name": "MangaDex",
+            "language": "ca",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "5148895169070562838",
+            "name": "MangaDex",
+            "language": "zh-Hans",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "1493666528525752601",
+            "name": "MangaDex",
+            "language": "zh-Hant",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "2072928884077964642",
+            "name": "MangaDex",
+            "language": "cv",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "8548374501079910130",
+            "name": "MangaDex",
+            "language": "hr",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "3578612018159256808",
+            "name": "MangaDex",
+            "language": "cs",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "425785191804166217",
+            "name": "MangaDex",
+            "language": "da",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "6750440049024086587",
+            "name": "MangaDex",
+            "language": "nl",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "2499283573021220255",
+            "name": "MangaDex",
+            "language": "en",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "2819252027406613931",
+            "name": "MangaDex",
+            "language": "eo",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "8773024089257004344",
+            "name": "MangaDex",
+            "language": "et",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "8578871918181236609",
+            "name": "MangaDex",
+            "language": "fil",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "8254121249433835847",
+            "name": "MangaDex",
+            "language": "fi",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "4505830566611664829",
+            "name": "MangaDex",
+            "language": "fr",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "8952567078513962586",
+            "name": "MangaDex",
+            "language": "ka",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "5098537545549490547",
+            "name": "MangaDex",
+            "language": "de",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "3260701926561129943",
+            "name": "MangaDex",
+            "language": "el",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "1424273154577029558",
+            "name": "MangaDex",
+            "language": "he",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "6840513937945146538",
+            "name": "MangaDex",
+            "language": "hi",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "4284949320785450865",
+            "name": "MangaDex",
+            "language": "hu",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "3686775439235747344",
+            "name": "MangaDex",
+            "language": "ga",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "3807502156582598786",
+            "name": "MangaDex",
+            "language": "id",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "1952071260038453057",
+            "name": "MangaDex",
+            "language": "it",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "1411768577036936240",
+            "name": "MangaDex",
+            "language": "ja",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "1573550798452063564",
+            "name": "MangaDex",
+            "language": "jv",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "8884149958776527952",
+            "name": "MangaDex",
+            "language": "kk",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "3285208643537017688",
+            "name": "MangaDex",
+            "language": "ko",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "764587568075398530",
+            "name": "MangaDex",
+            "language": "la",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "737986167355114438",
+            "name": "MangaDex",
+            "language": "lt",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "1471784905273036181",
+            "name": "MangaDex",
+            "language": "ms",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "5967745367608513818",
+            "name": "MangaDex",
+            "language": "mn",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "954368055061084457",
+            "name": "MangaDex",
+            "language": "ne",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "4872213291993424667",
+            "name": "MangaDex",
+            "language": "no",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "3781216447842245147",
+            "name": "MangaDex",
+            "language": "fa",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "8033579885162383068",
+            "name": "MangaDex",
+            "language": "pl",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "2655149515337070132",
+            "name": "MangaDex",
+            "language": "pt-BR",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "5189216366882819742",
+            "name": "MangaDex",
+            "language": "pt",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "4774459486579224459",
+            "name": "MangaDex",
+            "language": "ro",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "2098905203823335614",
+            "name": "MangaDex",
+            "language": "ru",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "3507378005483435886",
+            "name": "MangaDex",
+            "language": "sr",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "2875503798326600410",
+            "name": "MangaDex",
+            "language": "sk",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "4938773340256184018",
+            "name": "MangaDex",
+            "language": "es-419",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "6400665728063187402",
+            "name": "MangaDex",
+            "language": "es",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "1145824452519314725",
+            "name": "MangaDex",
+            "language": "sv",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "4273071356706429527",
+            "name": "MangaDex",
+            "language": "ta",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "6886894829142702925",
+            "name": "MangaDex",
+            "language": "te",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "1713554459881080228",
+            "name": "MangaDex",
+            "language": "th",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "3846770256925560569",
+            "name": "MangaDex",
+            "language": "tr",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "5779037855201976894",
+            "name": "MangaDex",
+            "language": "uk",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "72800122520214493",
+            "name": "MangaDex",
+            "language": "ur",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "2838715564514827672",
+            "name": "MangaDex",
+            "language": "uz",
+            "homeUrl": "https://mangadex.org"
+          },
+          {
+            "id": "9194073792736219759",
+            "name": "MangaDex",
+            "language": "vi",
+            "homeUrl": "https://mangadex.org"
+          }
+        ]
+      },
+      {
+        "name": "MANGA Plus by SHUEISHA",
+        "packageName": "eu.kanade.tachiyomi.extension.all.mangaplus",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-all.mangaplus-v1.6.66.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/all/mangaplus/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-all.mangaplus-v1.6.66.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106066",
+        "versionName": "1.6.66",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "1998944621602463790",
+            "name": "MANGA Plus by SHUEISHA",
+            "language": "en",
+            "homeUrl": "https://mangaplus.shueisha.co.jp"
+          },
+          {
+            "id": "1286073245950890830",
+            "name": "MANGA Plus by SHUEISHA",
+            "language": "es",
+            "homeUrl": "https://mangaplus.shueisha.co.jp"
+          },
+          {
+            "id": "7642759409549978864",
+            "name": "MANGA Plus by SHUEISHA",
+            "language": "fr",
+            "homeUrl": "https://mangaplus.shueisha.co.jp"
+          },
+          {
+            "id": "932564577108614127",
+            "name": "MANGA Plus by SHUEISHA",
+            "language": "id",
+            "homeUrl": "https://mangaplus.shueisha.co.jp"
+          },
+          {
+            "id": "3444662672352788181",
+            "name": "MANGA Plus by SHUEISHA",
+            "language": "pt-BR",
+            "homeUrl": "https://mangaplus.shueisha.co.jp"
+          },
+          {
+            "id": "3520485566708512181",
+            "name": "MANGA Plus by SHUEISHA",
+            "language": "ru",
+            "homeUrl": "https://mangaplus.shueisha.co.jp"
+          },
+          {
+            "id": "6345211913721743017",
+            "name": "MANGA Plus by SHUEISHA",
+            "language": "th",
+            "homeUrl": "https://mangaplus.shueisha.co.jp"
+          },
+          {
+            "id": "4696259977267090434",
+            "name": "MANGA Plus by SHUEISHA",
+            "language": "vi",
+            "homeUrl": "https://mangaplus.shueisha.co.jp"
+          },
+          {
+            "id": "1893513843840146580",
+            "name": "MANGA Plus by SHUEISHA",
+            "language": "de",
+            "homeUrl": "https://mangaplus.shueisha.co.jp"
+          }
+        ]
+      },
+      {
+        "name": "Webtoons.com",
+        "packageName": "eu.kanade.tachiyomi.extension.all.webtoons",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-all.webtoons-v1.6.2.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/all/webtoons/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-all.webtoons-v1.6.2.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106002",
+        "versionName": "1.6.2",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "2522335540328470744",
+            "name": "Webtoons.com",
+            "language": "en",
+            "homeUrl": "https://www.webtoons.com"
+          },
+          {
+            "id": "8749627068478740298",
+            "name": "Webtoons.com",
+            "language": "id",
+            "homeUrl": "https://www.webtoons.com"
+          },
+          {
+            "id": "3330861233813615504",
+            "name": "Webtoons.com",
+            "language": "th",
+            "homeUrl": "https://www.webtoons.com"
+          },
+          {
+            "id": "8664735734660636295",
+            "name": "Webtoons.com",
+            "language": "es",
+            "homeUrl": "https://www.webtoons.com"
+          },
+          {
+            "id": "8251758253314457060",
+            "name": "Webtoons.com",
+            "language": "fr",
+            "homeUrl": "https://www.webtoons.com"
+          },
+          {
+            "id": "2959982438613576472",
+            "name": "Webtoons.com",
+            "language": "zh-Hant",
+            "homeUrl": "https://www.webtoons.com"
+          },
+          {
+            "id": "1486822823904297379",
+            "name": "Webtoons.com",
+            "language": "de",
+            "homeUrl": "https://www.webtoons.com"
+          }
+        ]
+      },
+      {
+        "name": "Asura Scans",
+        "packageName": "eu.kanade.tachiyomi.extension.en.asurascans",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-en.asurascans-v1.6.69.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/en/asurascans/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-en.asurascans-v1.6.69.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106069",
+        "versionName": "1.6.69",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "6247824327199706550",
+            "name": "Asura Scans",
+            "language": "en",
+            "homeUrl": "https://asurascans.com"
+          }
+        ]
+      },
+      {
+        "name": "Flame Comics",
+        "packageName": "eu.kanade.tachiyomi.extension.en.flamecomics",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-en.flamecomics-v1.6.0.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/en/flamecomics/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-en.flamecomics-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "8531542650987673943",
+            "name": "Flame Comics",
+            "language": "en",
+            "homeUrl": "https://flamecomics.xyz"
+          }
+        ]
+      },
+      {
+        "name": "MangaPill",
+        "packageName": "eu.kanade.tachiyomi.extension.en.mangapill",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-en.mangapill-v1.6.0.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/en/mangapill/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-en.mangapill-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "8448310129093543312",
+            "name": "MangaPill",
+            "language": "en",
+            "homeUrl": "https://mangapill.com"
+          }
+        ]
+      },
+      {
+        "name": "Weeb Central",
+        "packageName": "eu.kanade.tachiyomi.extension.en.weebcentral",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-en.weebcentral-v1.6.25.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/en/weebcentral/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-en.weebcentral-v1.6.25.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106025",
+        "versionName": "1.6.25",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "2131019126180322627",
+            "name": "Weeb Central",
+            "language": "en",
+            "homeUrl": "https://weebcentral.com"
+          }
+        ]
+      },
+      {
+        "name": "AnimeSama",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.animesama",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.animesama-v1.6.1.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/animesama/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.animesama-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "5104384223103778991",
+            "name": "AnimeSama",
+            "language": "fr",
+            "homeUrl": "https://anime-sama.to"
+          }
+        ]
+      },
+      {
+        "name": "AralosBD",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.aralosbd",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.aralosbd-v1.6.0.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/aralosbd/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.aralosbd-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "7086384324753337104",
+            "name": "AralosBD",
+            "language": "fr",
+            "homeUrl": "https://aralosbd.fr"
+          }
+        ]
+      },
+      {
+        "name": "Astral-Manga",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.astralmanga",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.astralmanga-v1.6.0.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/astralmanga/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.astralmanga-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "8815089098147858609",
+            "name": "AstralManga",
+            "language": "fr",
+            "homeUrl": "https://astral-manga.fr"
+          }
+        ]
+      },
+      {
+        "name": "Harmony-Scan",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.bananascan",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.bananascan-v1.6.56.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/bananascan/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.bananascan-v1.6.56.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106056",
+        "versionName": "1.6.56",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "3121632933690925888",
+            "name": "Harmony-Scan",
+            "language": "fr",
+            "homeUrl": "https://harmony-scan.fr"
+          }
+        ]
+      },
+      {
+        "name": "Banchan Scan",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.banchanscan",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.banchanscan-v1.6.1.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/banchanscan/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.banchanscan-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "8593333389489308586",
+            "name": "Banchan Scan",
+            "language": "fr",
+            "homeUrl": "https://banchanscan.fr"
+          }
+        ]
+      },
+      {
+        "name": "BigSolo",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.bigsolo",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.bigsolo-v1.6.6.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/bigsolo/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.bigsolo-v1.6.6.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106006",
+        "versionName": "1.6.6",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "4410528266393104437",
+            "name": "BigSolo",
+            "language": "fr",
+            "homeUrl": "https://bigsolo.org"
+          }
+        ]
+      },
+      {
+        "name": "Blossom Scans",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.blossomscans",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.blossomscans-v1.6.1.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/blossomscans/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.blossomscans-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "5819845963401393451",
+            "name": "Blossom Scans",
+            "language": "fr",
+            "homeUrl": "https://blossom-scans.com"
+          }
+        ]
+      },
+      {
+        "name": "Blue Solo",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.bluesolo",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.bluesolo-v1.6.5.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/bluesolo/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.bluesolo-v1.6.5.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106005",
+        "versionName": "1.6.5",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "2095949455655924623",
+            "name": "Blue Solo",
+            "language": "fr",
+            "homeUrl": "https://bluesolo.org"
+          }
+        ]
+      },
+      {
+        "name": "ChaosTrad",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.chaostrad",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.chaostrad-v1.6.0.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/chaostrad/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.chaostrad-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "7263540291758019148",
+            "name": "ChaosTrad",
+            "language": "fr",
+            "homeUrl": "https://chaostrad.fr"
+          }
+        ]
+      },
+      {
+        "name": "Dassou Scan",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.dassouscan",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.dassouscan-v1.6.1.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/dassouscan/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.dassouscan-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "7036720639283559699",
+            "name": "Dassou Scan",
+            "language": "fr",
+            "homeUrl": "https://dassouscan.com"
+          }
+        ]
+      },
+      {
+        "name": "Epsilon Scan",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.epsilonscan",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.epsilonscan-v1.4.56.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/epsilonscan/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.epsilonscan-v1.4.56.jar"
+        },
+        "extensionLib": "1.4",
+        "versionCode": "104056",
+        "versionName": "1.4.56",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "2577248042661857530",
+            "name": "Epsilon Scan",
+            "language": "fr",
+            "homeUrl": "https://epsilonscan.to"
+          }
+        ]
+      },
+      {
+        "name": "FMTEAM",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.fmteam",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.fmteam-v1.6.8.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/fmteam/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.fmteam-v1.6.8.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106008",
+        "versionName": "1.6.8",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "7699632518084274667",
+            "name": "FMTEAM",
+            "language": "fr",
+            "homeUrl": "https://fmteam.fr"
+          }
+        ]
+      },
+      {
+        "name": "FuryoSquad",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.furyosquad",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.furyosquad-v1.6.0.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/furyosquad/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.furyosquad-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "267710359229814456",
+            "name": "FuryoSquad",
+            "language": "fr",
+            "homeUrl": "https://www.furyosociety.com"
+          }
+        ]
+      },
+      {
+        "name": "Hana Book",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.hanabook",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.hanabook-v1.6.0.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/hanabook/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.hanabook-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "4125236041054867131",
+            "name": "Hana Book",
+            "language": "fr",
+            "homeUrl": "https://www.hana-book.fr"
+          }
+        ]
+      },
+      {
+        "name": "Hentai Origines",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.hentaiorigines",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.hentaiorigines-v1.6.58.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/hentaiorigines/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.hentaiorigines-v1.6.58.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106058",
+        "versionName": "1.6.58",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "3875672872924535086",
+            "name": "Hentai Origines",
+            "language": "fr",
+            "homeUrl": "https://hentai-origines.com"
+          }
+        ]
+      },
+      {
+        "name": "Hentai Scan Reader",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.hentaiscanreader",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.hentaiscanreader-v1.6.2.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/hentaiscanreader/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.hentaiscanreader-v1.6.2.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106002",
+        "versionName": "1.6.2",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "8376548397716758785",
+            "name": "Hentai Scan Reader",
+            "language": "fr",
+            "homeUrl": "https://hentai.scanreader.net"
+          }
+        ]
+      },
+      {
+        "name": "Hentai-Scantrad",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.hentaiscantrad",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.hentaiscantrad-v1.6.57.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/hentaiscantrad/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.hentaiscantrad-v1.6.57.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106057",
+        "versionName": "1.6.57",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "6747208512135394944",
+            "name": "Hentai-Scantrad",
+            "language": "fr",
+            "homeUrl": "https://hentai-scantrad.org"
+          }
+        ]
+      },
+      {
+        "name": "HentaiZone",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.hentaizone",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.hentaizone-v1.6.56.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/hentaizone/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.hentaizone-v1.6.56.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106056",
+        "versionName": "1.6.56",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "4897336575284771091",
+            "name": "HentaiZone",
+            "language": "fr",
+            "homeUrl": "https://hentaizone.xyz"
+          }
+        ]
+      },
+      {
+        "name": "HistoireDHentai",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.histoiredhentai",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.histoiredhentai-v1.6.55.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/histoiredhentai/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.histoiredhentai-v1.6.55.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106055",
+        "versionName": "1.6.55",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "6899189456839494153",
+            "name": "HistoireDHentai",
+            "language": "fr",
+            "homeUrl": "https://hhentai.fr"
+          }
+        ]
+      },
+      {
+        "name": "Japscan",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.japscan",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.japscan-v1.6.1.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/japscan/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.japscan-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "11",
+            "name": "Japscan",
+            "language": "fr",
+            "homeUrl": "https://www.japscan.foo"
+          }
+        ]
+      },
+      {
+        "name": "Kiwiya Scans",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.kiwiyascans",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.kiwiyascans-v1.6.0.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/kiwiyascans/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.kiwiyascans-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "8654267899929745421",
+            "name": "Kiwiya Scans",
+            "language": "fr",
+            "homeUrl": "https://kiwiyascans.com"
+          }
+        ]
+      },
+      {
+        "name": "LanorTrad",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.lanortrad",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.lanortrad-v1.6.1.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/lanortrad/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.lanortrad-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "6624592926208705847",
+            "name": "LanorTrad",
+            "language": "fr",
+            "homeUrl": "https://lanortrad.com"
+          }
+        ]
+      },
+      {
+        "name": "Lelmanga",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.lelmanga",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.lelmanga-v1.6.1.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/lelmanga/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.lelmanga-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "8647761747185981431",
+            "name": "Lelmanga",
+            "language": "fr",
+            "homeUrl": "https://www.lelmanga.com"
+          }
+        ]
+      },
+      {
+        "name": "Lelscan",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.lelscan",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.lelscan-v1.6.0.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/lelscan/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.lelscan-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "8620544519921042006",
+            "name": "Lelscan",
+            "language": "fr",
+            "homeUrl": "https://lelscans.net"
+          }
+        ]
+      },
+      {
+        "name": "Lelscan-VF",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.lelscanvf",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.lelscanvf-v1.6.0.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/lelscanvf/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.lelscanvf-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "4874205281198767614",
+            "name": "Lelscan-VF",
+            "language": "fr",
+            "homeUrl": "https://www.lelscanfr.com"
+          }
+        ]
+      },
+      {
+        "name": "Les Poroiniens",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.lesporoiniens",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.lesporoiniens-v1.6.1.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/lesporoiniens/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.lesporoiniens-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "7783284177278678538",
+            "name": "Les Poroiniens",
+            "language": "fr",
+            "homeUrl": "https://lesporoiniens.org"
+          }
+        ]
+      },
+      {
+        "name": "Ma Brute",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.mabrute",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.mabrute-v1.6.55.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/mabrute/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.mabrute-v1.6.55.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106055",
+        "versionName": "1.6.55",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "597251646967446227",
+            "name": "Ma Brute",
+            "language": "fr",
+            "homeUrl": "https://mabrute.com"
+          }
+        ]
+      },
+      {
+        "name": "Manga-Corporation",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.mangacorporation",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.mangacorporation-v1.6.6.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/mangacorporation/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.mangacorporation-v1.6.6.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106006",
+        "versionName": "1.6.6",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "1528177119657303302",
+            "name": "Manga-Corporation",
+            "language": "fr",
+            "homeUrl": "https://manga-corporation.com"
+          }
+        ]
+      },
+      {
+        "name": "MangaHub.fr",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.mangahubfr",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.mangahubfr-v1.6.57.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/mangahubfr/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.mangahubfr-v1.6.57.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106057",
+        "versionName": "1.6.57",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "3294884430139323314",
+            "name": "MangaHub.fr",
+            "language": "fr",
+            "homeUrl": "https://mangahub.fr"
+          }
+        ]
+      },
+      {
+        "name": "Mangakawaii",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.mangakawaii",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.mangakawaii-v1.6.1.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/mangakawaii/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.mangakawaii-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "1384625280015637699",
+            "name": "Mangakawaii",
+            "language": "fr",
+            "homeUrl": "https://www.mangakawaii.fr"
+          }
+        ]
+      },
+      {
+        "name": "MangaMoins",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.mangamoins",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.mangamoins-v1.6.0.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/mangamoins/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.mangamoins-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "6508647660473520087",
+            "name": "MangaMoins",
+            "language": "fr",
+            "homeUrl": "https://mangamoins.com"
+          }
+        ]
+      },
+      {
+        "name": "MangaNova",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.manganova",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.manganova-v1.6.0.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/manganova/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.manganova-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "514127183927359583",
+            "name": "MangaNova",
+            "language": "fr",
+            "homeUrl": "https://www.manga-nova.com"
+          }
+        ]
+      },
+      {
+        "name": "Manga-Scantrad",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.mangascantrad",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.mangascantrad-v1.6.59.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/mangascantrad/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.mangascantrad-v1.6.59.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106059",
+        "versionName": "1.6.59",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "540252682818453285",
+            "name": "Manga-Scantrad",
+            "language": "fr",
+            "homeUrl": "https://manga-scantrad.io"
+          }
+        ]
+      },
+      {
+        "name": "Mangas-Origines.fr",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.mangasoriginesfr",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.mangasoriginesfr-v1.6.61.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/mangasoriginesfr/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.mangasoriginesfr-v1.6.61.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106061",
+        "versionName": "1.6.61",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "4803238581797687746",
+            "name": "Mangas-Origines.fr",
+            "language": "fr",
+            "homeUrl": "https://mangas-origines.fr"
+          }
+        ]
+      },
+      {
+        "name": "Ono",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.ono",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.ono-v1.6.0.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/ono/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.ono-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "4944745470170824284",
+            "name": "Ono",
+            "language": "fr",
+            "homeUrl": "https://www.ono.live"
+          }
+        ]
+      },
+      {
+        "name": "Ortega Scans",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.ortegascans",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.ortegascans-v1.6.3.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/ortegascans/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.ortegascans-v1.6.3.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106003",
+        "versionName": "1.6.3",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "8598370605081191622",
+            "name": "Ortega Scans",
+            "language": "fr",
+            "homeUrl": "https://ortegascans.fr"
+          }
+        ]
+      },
+      {
+        "name": "Pantheon Scan",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.pantheonscan",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.pantheonscan-v1.6.56.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/pantheonscan/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.pantheonscan-v1.6.56.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106056",
+        "versionName": "1.6.56",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "1615599506055429686",
+            "name": "Pantheon Scan",
+            "language": "fr",
+            "homeUrl": "https://pantheon-scan.com"
+          }
+        ]
+      },
+      {
+        "name": "PhenixScans (unoriginal)",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.phenixscansco",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.phenixscansco-v1.4.1.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/phenixscansco/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.phenixscansco-v1.4.1.jar"
+        },
+        "extensionLib": "1.4",
+        "versionCode": "104001",
+        "versionName": "1.4.1",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "6081284597648692367",
+            "name": "Phenix Scans (unoriginal)",
+            "language": "fr",
+            "homeUrl": "https://phenix-scans.co"
+          }
+        ]
+      },
+      {
+        "name": "Pornhwa.fr",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.pornhwafr",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.pornhwafr-v1.6.0.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/pornhwafr/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.pornhwafr-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "4388148978547727168",
+            "name": "Pornwha.fr",
+            "language": "fr",
+            "homeUrl": "https://pornhwa.fr"
+          }
+        ]
+      },
+      {
+        "name": "Poseidon Scans",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.poseidonscans",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.poseidonscans-v1.6.0.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/poseidonscans/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.poseidonscans-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "8936307069044646761",
+            "name": "Poseidon Scans",
+            "language": "fr",
+            "homeUrl": "https://poseidon-scans.net"
+          }
+        ]
+      },
+      {
+        "name": "Raijin Scans",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.raijinscans",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.raijinscans-v1.4.68.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/raijinscans/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.raijinscans-v1.4.68.jar"
+        },
+        "extensionLib": "1.4",
+        "versionCode": "104068",
+        "versionName": "1.4.68",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "8373267671495516033",
+            "name": "Raijin Scans",
+            "language": "fr",
+            "homeUrl": "https://raijin-scans.fr"
+          }
+        ]
+      },
+      {
+        "name": "Rimu Scans",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.rimuscans",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.rimuscans-v1.6.0.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/rimuscans/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.rimuscans-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "203984087587807085",
+            "name": "Rimu Scans",
+            "language": "fr",
+            "homeUrl": "https://rimuscan.fr"
+          }
+        ]
+      },
+      {
+        "name": "X-Manga",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.scanhentaimenu",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.scanhentaimenu-v1.6.59.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/scanhentaimenu/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.scanhentaimenu-v1.6.59.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106059",
+        "versionName": "1.6.59",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "4153742697148883998",
+            "name": "X-Manga",
+            "language": "fr",
+            "homeUrl": "https://x-manga.org"
+          }
+        ]
+      },
+      {
+        "name": "Scan-Manga",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.scanmanga",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.scanmanga-v1.4.23.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/scanmanga/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.scanmanga-v1.4.23.jar"
+        },
+        "extensionLib": "1.4",
+        "versionCode": "104023",
+        "versionName": "1.4.23",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "2062108502806113139",
+            "name": "Scan-Manga",
+            "language": "fr",
+            "homeUrl": "https://m.scan-manga.com"
+          }
+        ]
+      },
+      {
+        "name": "ScanR",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.scanr",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.scanr-v1.6.0.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/scanr/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.scanr-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "5710047468564158686",
+            "name": "ScanR",
+            "language": "fr",
+            "homeUrl": "https://teamscanr.fr"
+          }
+        ]
+      },
+      {
+        "name": "Scan Reader",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.scanreader",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.scanreader-v1.6.2.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/scanreader/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.scanreader-v1.6.2.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106002",
+        "versionName": "1.6.2",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "6450715347254021327",
+            "name": "Scan Reader",
+            "language": "fr",
+            "homeUrl": "https://scanreader.net"
+          }
+        ]
+      },
+      {
+        "name": "ScansFR",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.scansfr",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.scansfr-v1.4.3.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/scansfr/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.scansfr-v1.4.3.jar"
+        },
+        "extensionLib": "1.4",
+        "versionCode": "104003",
+        "versionName": "1.4.3",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "2639384491930845930",
+            "name": "ScansFR",
+            "language": "fr",
+            "homeUrl": "https://scansfr.com"
+          }
+        ]
+      },
+      {
+        "name": "Scantrad Union",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.scantradunion",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.scantradunion-v1.6.0.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/scantradunion/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.scantradunion-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "155525085323453412",
+            "name": "Scantrad Union",
+            "language": "fr",
+            "homeUrl": "https://scantrad-union.com"
+          }
+        ]
+      },
+      {
+        "name": "Scan VF",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.scanvf",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.scanvf-v1.6.0.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/scanvf/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.scanvf-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "2455131357585282669",
+            "name": "Scan VF",
+            "language": "fr",
+            "homeUrl": "https://www.scan-vf.net"
+          }
+        ]
+      },
+      {
+        "name": "Siren Scans FR",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.sirenscansfr",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.sirenscansfr-v1.6.22.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/sirenscansfr/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.sirenscansfr-v1.6.22.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106022",
+        "versionName": "1.6.22",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "9130638185861146476",
+            "name": "Siren Scans FR",
+            "language": "fr",
+            "homeUrl": "https://sirenscans.fr"
+          }
+        ]
+      },
+      {
+        "name": "Soft Epsilon Scan",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.softepsilonscan",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.softepsilonscan-v1.4.56.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/softepsilonscan/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.softepsilonscan-v1.4.56.jar"
+        },
+        "extensionLib": "1.4",
+        "versionCode": "104056",
+        "versionName": "1.4.56",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "4969929389259348100",
+            "name": "Soft Epsilon Scan",
+            "language": "fr",
+            "homeUrl": "https://epsilonsoft.to"
+          }
+        ]
+      },
+      {
+        "name": "Solaris Scans",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.solarisscans",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.solarisscans-v1.6.2.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/solarisscans/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.solarisscans-v1.6.2.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106002",
+        "versionName": "1.6.2",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "1172624746268381921",
+            "name": "Solaris Scans",
+            "language": "fr",
+            "homeUrl": "https://solaris-scans.fr"
+          }
+        ]
+      },
+      {
+        "name": "Sushi-Scan",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.sushiscan",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.sushiscan-v1.6.17.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/sushiscan/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.sushiscan-v1.6.17.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106017",
+        "versionName": "1.6.17",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "6516188872647980679",
+            "name": "Sushi-Scan",
+            "language": "fr",
+            "homeUrl": "https://sushiscan.net"
+          }
+        ]
+      },
+      {
+        "name": "Sushiscan.fr",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.sushiscanfr",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.sushiscanfr-v1.6.3.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/sushiscanfr/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.sushiscanfr-v1.6.3.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106003",
+        "versionName": "1.6.3",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "3196884165456788667",
+            "name": "Sushiscan.fr",
+            "language": "fr",
+            "homeUrl": "https://sushiscan.fr"
+          }
+        ]
+      },
+      {
+        "name": "Toon FR",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.toonfr",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.toonfr-v1.6.55.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/toonfr/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.toonfr-v1.6.55.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106055",
+        "versionName": "1.6.55",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "3235818654344600611",
+            "name": "Toon FR",
+            "language": "fr",
+            "homeUrl": "https://toonfr.com"
+          }
+        ]
+      },
+      {
+        "name": "Twatt",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.twatt",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.twatt-v1.6.1.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/twatt/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.twatt-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "5157242904926355900",
+            "name": "Twatt",
+            "language": "fr",
+            "homeUrl": "https://twatt.fr"
+          }
+        ]
+      },
+      {
+        "name": "YaoiScan",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.yaoiscan",
+        "resources": {
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.yaoiscan-v1.6.1.apk",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/yaoiscan/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/54b7143/tachiyomi-fr.yaoiscan-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "7333825394865171341",
+            "name": "YaoiScan",
+            "language": "fr",
+            "homeUrl": "https://yaoiscan.fr"
+          }
+        ]
+      }
+    ]
+  }
+}
