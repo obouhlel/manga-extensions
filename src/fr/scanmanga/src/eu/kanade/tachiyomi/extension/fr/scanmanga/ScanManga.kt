@@ -70,7 +70,9 @@ abstract class ScanManga :
             .build()
     }
 
-    override fun Headers.Builder.configureHeaders(): Headers.Builder = add("upgrade-insecure-requests", "1")
+    // A desktop User-Agent gets redirected to www.scan-manga.com, whose markup none of the selectors match
+    override fun Headers.Builder.configureHeaders(): Headers.Builder = apply { if (get("User-Agent")?.contains("Mobile") != true) set("User-Agent", MOBILE_USER_AGENT) }
+        .add("upgrade-insecure-requests", "1")
         .add("sec-fetch-site", "none")
         .add("accept-language", "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7")
         .add("X-Requested-With", "")
@@ -408,6 +410,7 @@ abstract class ScanManga :
     }
 
     companion object {
+        private const val MOBILE_USER_AGENT = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
         private const val PACKED_SCRIPT_SELECTOR = "script:containsData(eval\\(function \\()"
         private val HUNTER_OBFUSCATION_REGEX =
             Regex("""eval\s*\(\s*function\s*\(\s*\w\s*,\s*\w\s*,\s*\w\s*,\s*\w\s*,\s*\w\s*,\s*\w\s*(?:,\s*[^)]+)?\)\s*\{\s*.*?\s*\}\s*\(\s*"([^"]+)"\s*,\s*\d+\s*,\s*"([^"]+)"\s*,\s*(\d+)\s*,\s*(\d+)\s*,\s*\d+\s*\)\s*\)""")
