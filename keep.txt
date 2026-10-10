@@ -1,0 +1,11 @@
+# Sources gardées dans ce fork, appliquées par scripts/prune.sh.
+# Une entrée par ligne : une langue entière (src/fr) ou une seule extension (src/fr/animesama).
+# Pour trier une langue, remplace sa ligne par la liste des extensions à garder.
+src/fr
+src/all/mangadex
+src/all/webtoons
+src/all/mangaplus
+src/en/asurascans
+src/en/flamecomics
+src/en/weebcentral
+src/en/mangapill

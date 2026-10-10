@@ -150,21 +150,7 @@ abstract class AnimeSama : KeiSource() {
 
     private suspend fun fetchScanChapters(scanUrl: HttpUrl, scanlatorGroup: String): List<SChapter> {
         val subDocument = client.get(scanUrl).asJsoup()
-        val mainPageLink = subDocument.selectFirst("a:has(#imgOeuvre.grayscale)")?.absUrl("href")
-
-        var title = if (!mainPageLink.isNullOrEmpty()) {
-            try {
-                client.get(mainPageLink).asJsoup().getWorkTitle()
-            } catch (_: Exception) {
-                ""
-            }
-        } else {
-            ""
-        }
-        if (title.isBlank()) {
-            title = subDocument.getWorkTitle()
-        }
-
+        val title = subDocument.getWorkTitle()
         if (title.isBlank()) return emptyList()
 
         val chapterUrl = "$baseUrl/s2/scans/get_nb_chap_et_img.php".toHttpUrl()
@@ -179,49 +165,66 @@ abstract class AnimeSama : KeiSource() {
             emptyMap()
         }
 
-        val parsedChapterList = mutableListOf<SChapter>()
+        return buildChapterNames(subDocument, apiImageCountJson.size)
+            .take(apiImageCountJson.size)
+            .mapIndexed { index, chapterName -> createChapter(chapterName, index + 1, title, scanlatorGroup, chapterUrl) }
+    }
+
+    // Mirrors the list building of the site's /js/contenu/scans.js: the chapter at index i reads the images of folder i + 1
+    private fun buildChapterNames(document: Document, chapterCount: Int): List<String> {
+        val script = document.select("script:not([src])").joinToString("\n") { it.data() }
+            .replace(JS_COMMENT_REGEX, "")
+        val commands = LIST_COMMAND_REGEX.findAll(script).toList()
+        if (commands.isEmpty()) return (1..chapterCount).map { "Chapitre $it" }
+
+        val names = mutableListOf<String>()
         var chapterDelay = 0
-        val html = subDocument.html()
-        if (html.contains("resetListe()")) {
-            val scriptCommandList = html.split(";")
-            scriptCommandList.forEach { command ->
-                when {
-                    CREATE_LIST_REGEX.find(command) != null -> {
-                        val data = CREATE_LIST_REGEX.find(command)!!.groupValues[1].split(",")
-                        val start = data[0].trim().toInt()
-                        val end = data[1].trim().toInt()
-
-                        for (i in start..end) {
-                            parsedChapterList.add(createChapter(i.toString(), parsedChapterList.size + 1, title, scanlatorGroup, chapterUrl))
-                        }
-                    }
-
-                    NEW_SP_REGEX.find(command) != null -> {
-                        val chapterName = NEW_SP_REGEX.find(command)!!.groupValues[1]
-                        parsedChapterList.add(createChapter(chapterName, parsedChapterList.size + 1, title, scanlatorGroup, chapterUrl))
-                        chapterDelay++
-                    }
+        for (command in commands) {
+            val (function, rawArgs) = command.destructured
+            val args = rawArgs.split(",").map { it.trim().trim('"', '\'') }
+            when (function) {
+                "resetListe" -> names.clear()
+                "creerListe" -> {
+                    val start = args[0].toIntOrNull() ?: continue
+                    val end = args.getOrNull(1)?.toIntOrNull() ?: continue
+                    (start..end).mapTo(names) { "Chapitre $it" }
+                }
+                "newSP" -> {
+                    names += "Chapitre ${args[0]}"
+                    chapterDelay++
+                }
+                "newSPF" -> {
+                    names += args[0]
+                    chapterDelay++
+                }
+                "finirListe" -> {
+                    val start = args[0].toIntOrNull() ?: continue
+                    (start..chapterCount - chapterDelay).mapTo(names) { "Chapitre $it" }
                 }
             }
         }
-
-        (parsedChapterList.size until apiImageCountJson.size).forEach { _ ->
-            parsedChapterList.add(createChapter((parsedChapterList.size + 1 - chapterDelay).toString(), parsedChapterList.size + 1, title, scanlatorGroup, chapterUrl))
-        }
-        return parsedChapterList
+        return names
     }
 
     // ========================= Pages =========================
     override suspend fun getPageList(chapter: SChapter): List<Page> {
-        val url = (baseUrl + chapter.url).toHttpUrl()
-        val title = url.queryParameter("oeuvre")
-        val chapterId = url.queryParameter("id")
+        // setUrlWithoutDomain stores the query decoded, so titles containing "&" can't go through queryParameter()
+        val title = chapter.url.substringAfter("oeuvre=").substringBefore("&id=")
+        val chapterId = chapter.url.substringAfter("&id=").substringBefore("&")
 
-        val apiImageCountJson = client.get(url).parseAs<Map<String, Int>>()
-        val imageCount = apiImageCountJson[chapterId] ?: 0
+        val apiUrl = "$baseUrl/s2/scans/get_nb_chap_et_img.php".toHttpUrl().newBuilder()
+            .addQueryParameter("oeuvre", title)
+            .build()
+        val imageCount = client.get(apiUrl).parseAs<Map<String, Int>>()[chapterId] ?: 0
 
         return (1..imageCount).map { index ->
-            Page(index, imageUrl = "$baseUrl/s2/scans/$title/$chapterId/$index.jpg")
+            val imageUrl = baseUrl.toHttpUrl().newBuilder()
+                .addPathSegments("s2/scans")
+                .addPathSegment(title)
+                .addPathSegment(chapterId)
+                .addPathSegment("$index.jpg")
+                .build()
+            Page(index, imageUrl = imageUrl.toString())
         }
     }
 
@@ -270,15 +273,15 @@ abstract class AnimeSama : KeiSource() {
     private fun Document.getWorkTitle(): String = selectFirst("#titreOeuvre")?.textNodes()?.firstOrNull()?.wholeText ?: ""
 
     private fun createChapter(chapterName: String, id: Int, title: String, scanlatorGroup: String, chapterUrl: HttpUrl): SChapter = SChapter.create().apply {
-        name = "Chapitre $chapterName"
+        name = chapterName
         setUrlWithoutDomain(chapterUrl.newBuilder().addQueryParameter("id", id.toString()).addQueryParameter("title", title).build().toString())
         scanlator = scanlatorGroup
     }
 
     companion object {
         private val SCAN_PANEL_REGEX = """panneauScan\("(.+?)", "(.+?)"\)""".toRegex()
-        private val CREATE_LIST_REGEX = """creerListe\((\d+,\s*\d+)\)""".toRegex()
-        private val NEW_SP_REGEX = """newSP\((\d+(\.\d+)?|"(.*?)")\)""".toRegex()
+        private val LIST_COMMAND_REGEX = """\b(resetListe|creerListe|newSPF|newSP|finirListe)\(([^)]*)\)""".toRegex()
+        private val JS_COMMENT_REGEX = """/\*[\s\S]*?\*/""".toRegex()
         private val SCANS_REGEX = """(Scans|\(|\))""".toRegex()
     }
 }

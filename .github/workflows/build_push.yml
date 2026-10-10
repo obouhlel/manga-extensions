@@ -154,7 +154,7 @@ jobs:
 
       - name: Upload APKs (${{ matrix.chunk.number }})
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
-        if: "github.repository == 'keiyoushi/extensions-source'"
+        if: "github.repository == 'obouhlel/manga-extensions'"
         with:
           name: "individual-apks-${{ matrix.chunk.number }}"
           path: |
@@ -173,13 +173,15 @@ jobs:
     # Run whenever there's anything to publish, new/changed builds OR only deletions
     if: >-
       always() &&
-      github.repository == 'keiyoushi/extensions-source' &&
+      github.repository == 'obouhlel/manga-extensions' &&
       needs.prepare.result == 'success' &&
       needs.build-extensions.result != 'failure' &&
       needs.build-extensions.result != 'cancelled' &&
       needs.prepare.outputs.delete != '[]'
     runs-on: ubuntu-latest
     timeout-minutes: 120
+    permissions:
+      contents: write
     steps:
       - name: Download APK artifacts
         if: needs.build-extensions.result == 'success'
@@ -197,8 +199,7 @@ jobs:
       - name: Checkout repo branch
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          repository: keiyoushi/extensions
-          token: ${{ secrets.BOT_PAT }}
+          token: ${{ github.token }}
           ref: repo
           path: repo
           persist-credentials: true
@@ -207,20 +208,21 @@ jobs:
         env:
           DELETE: ${{ needs.prepare.outputs.delete }}
           FULL_REBUILD: ${{ needs.prepare.outputs.full_rebuild }}
-          GH_TOKEN: ${{ secrets.BOT_PAT }}
+          GH_TOKEN: ${{ github.token }}
+          SIGNING_KEY_FINGERPRINT: ${{ vars.SIGNING_KEY_FINGERPRINT }}
         run: |
           cd repo
           pip install protobuf
           python -u ../main/.github/scripts/publish-repo.py "$DELETE" "$GITHUB_SHA" "$FULL_REBUILD"
-          git config --global user.email "156378334+keiyoushi-bot@users.noreply.github.com"
-          git config --global user.name "keiyoushi-bot"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
           git status
           if [ -n "$(git status --porcelain)" ]; then
             git add .
             git commit -m "Update extensions repo"
             git push
-            curl https://purge.jsdelivr.net/gh/keiyoushi/extensions@repo/index.json
-            curl https://purge.jsdelivr.net/gh/keiyoushi/extensions@repo/index.pb
+            curl https://purge.jsdelivr.net/gh/obouhlel/manga-extensions@repo/index.json
+            curl https://purge.jsdelivr.net/gh/obouhlel/manga-extensions@repo/index.pb
           else
             echo "No changes to commit"
           fi
