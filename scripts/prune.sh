@@ -16,7 +16,7 @@ for dir in src/*/*/; do
 done
 
 if ((${#to_remove[@]})); then
-    printf '%s\0' "${to_remove[@]}" | xargs -0 git rm -r -q --ignore-unmatch --
+    printf '%s\0' "${to_remove[@]}" | xargs -0 git rm -r -q -f --ignore-unmatch --
     printf '%s\0' "${to_remove[@]}" | xargs -0 rm -rf --
 fi
 find src -mindepth 1 -maxdepth 1 -type d -empty -delete
