@@ -602,13 +602,13 @@
         "name": "AnimeSama",
         "packageName": "eu.kanade.tachiyomi.extension.fr.animesama",
         "resources": {
-          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/d4cc9bd/tachiyomi-fr.animesama-v1.6.2.apk",
+          "apkUrl": "https://github.com/obouhlel/manga-extensions/releases/download/ab209e8/tachiyomi-fr.animesama-v1.6.3.apk",
           "iconUrl": "https://cdn.jsdelivr.net/gh/obouhlel/manga-extensions@main/src/fr/animesama/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/d4cc9bd/tachiyomi-fr.animesama-v1.6.2.jar"
+          "jarUrl": "https://github.com/obouhlel/manga-extensions/releases/download/ab209e8/tachiyomi-fr.animesama-v1.6.3.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106002",
-        "versionName": "1.6.2",
+        "versionCode": "106003",
+        "versionName": "1.6.3",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
