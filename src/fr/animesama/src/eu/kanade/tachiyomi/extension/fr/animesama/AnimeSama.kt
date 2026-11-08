@@ -119,16 +119,18 @@ abstract class AnimeSama : KeiSource() {
     private suspend fun fetchChapterList(url: HttpUrl, document: Document): List<SChapter> {
         val scanPanelContent = getScanPanelContent(document)
 
-        val chapterLists = coroutineScope {
-            scanPanelContent.mapNotNull { line ->
-                val matchResult = SCAN_PANEL_REGEX.find(line) ?: return@mapNotNull null
-                val (scanTitle, scanUrl) = matchResult.destructured
-                if (scanUrl.contains("va")) return@mapNotNull null
+        val panels = scanPanelContent.mapNotNull { line ->
+            val (scanTitle, scanUrl) = SCAN_PANEL_REGEX.find(line)?.destructured ?: return@mapNotNull null
+            if (scanUrl.contains("va")) null else scanTitle.replace(SCANS_REGEX, "").trim() to scanUrl
+        }
 
-                val scanlatorGroup = scanTitle.replace(SCANS_REGEX, "").trim()
+        // Every panel numbers its chapters from 1, so secondary panels (side stories, colour editions...) get a prefix
+        val chapterLists = coroutineScope {
+            panels.mapIndexed { index, (scanlatorGroup, scanUrl) ->
+                val namePrefix = if (index == 0 || scanlatorGroup.isEmpty()) "" else "$scanlatorGroup - "
                 async {
                     try {
-                        fetchScanChapters(url.newBuilder().addPathSegments(scanUrl).build(), scanlatorGroup)
+                        fetchScanChapters(url.newBuilder().addPathSegments(scanUrl).build(), scanlatorGroup, namePrefix)
                     } catch (_: Exception) {
                         emptyList()
                     }
@@ -136,19 +138,10 @@ abstract class AnimeSama : KeiSource() {
             }.awaitAll()
         }
 
-        val parsedChapterList = mutableListOf<SChapter>()
-        chapterLists.forEach { chapters ->
-            for (chapter in chapters) {
-                if (parsedChapterList.none { it.name == chapter.name }) {
-                    parsedChapterList.add(chapter)
-                }
-            }
-        }
-        parsedChapterList.sortBy { chapter -> "$baseUrl${chapter.url}".toHttpUrl().queryParameter("id")?.toIntOrNull() }
-        return parsedChapterList.asReversed()
+        return chapterLists.flatten().asReversed()
     }
 
-    private suspend fun fetchScanChapters(scanUrl: HttpUrl, scanlatorGroup: String): List<SChapter> {
+    private suspend fun fetchScanChapters(scanUrl: HttpUrl, scanlatorGroup: String, namePrefix: String): List<SChapter> {
         val subDocument = client.get(scanUrl).asJsoup()
         val title = subDocument.getWorkTitle()
         if (title.isBlank()) return emptyList()
@@ -167,7 +160,7 @@ abstract class AnimeSama : KeiSource() {
 
         return buildChapterNames(subDocument, apiImageCountJson.size)
             .take(apiImageCountJson.size)
-            .mapIndexed { index, chapterName -> createChapter(chapterName, index + 1, title, scanlatorGroup, chapterUrl) }
+            .mapIndexed { index, chapterName -> createChapter(namePrefix + chapterName, index + 1, title, scanlatorGroup, chapterUrl) }
     }
 
     // Mirrors the list building of the site's /js/contenu/scans.js: the chapter at index i reads the images of folder i + 1
