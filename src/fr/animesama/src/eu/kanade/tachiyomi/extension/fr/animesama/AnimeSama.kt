@@ -8,6 +8,7 @@ import eu.kanade.tachiyomi.source.model.SManga
 import eu.kanade.tachiyomi.source.model.SMangaUpdate
 import keiyoushi.annotation.Source
 import keiyoushi.network.get
+import keiyoushi.network.head
 import keiyoushi.source.KeiSource
 import keiyoushi.utils.asJsoup
 import keiyoushi.utils.parseAs
@@ -209,17 +210,21 @@ abstract class AnimeSama : KeiSource() {
         val apiUrl = "$baseUrl/s2/scans/get_nb_chap_et_img.php".toHttpUrl().newBuilder()
             .addQueryParameter("oeuvre", title)
             .build()
-        val imageCount = client.get(apiUrl).parseAs<Map<String, Int>>()[chapterId] ?: 0
+        var imageCount = client.get(apiUrl).parseAs<Map<String, Int>>()[chapterId] ?: 0
 
-        return (1..imageCount).map { index ->
-            val imageUrl = baseUrl.toHttpUrl().newBuilder()
-                .addPathSegments("s2/scans")
-                .addPathSegment(title)
-                .addPathSegment(chapterId)
-                .addPathSegment("$index.jpg")
-                .build()
-            Page(index, imageUrl = imageUrl.toString())
+        fun imageUrl(index: Int) = baseUrl.toHttpUrl().newBuilder()
+            .addPathSegments("s2/scans")
+            .addPathSegment(title)
+            .addPathSegment(chapterId)
+            .addPathSegment("$index.jpg")
+            .build()
+
+        // The API sometimes counts one image too many: that trailing page 404s and makes the whole download fail
+        while (imageCount > 0 && client.head(imageUrl(imageCount), ensureSuccess = false).use { it.code == 404 }) {
+            imageCount--
         }
+
+        return (1..imageCount).map { index -> Page(index, imageUrl = imageUrl(index).toString()) }
     }
 
     // ========================= Filters =========================
