@@ -71,12 +71,12 @@
   },
   "eu.kanade.tachiyomi.extension.fr.animesama": {
     "apk": {
-      "name": "tachiyomi-fr.animesama-v1.6.3.apk",
-      "sha256": "2bb7e63bc58d64a7c9b9097ae54a5fc038f39bd66a88e175a612e73545b3a684"
+      "name": "tachiyomi-fr.animesama-v1.6.4.apk",
+      "sha256": "490f51d1b6ed8f361f3d16e1cda0f79ea63a513520521c3ff3a2c700ac9235ea"
     },
     "jar": {
-      "name": "tachiyomi-fr.animesama-v1.6.3.jar",
-      "sha256": "72fe6ecd0a01e9632d049fa03237bd79f94644ee0ec63dd74cfc5890408e8d7e"
+      "name": "tachiyomi-fr.animesama-v1.6.4.jar",
+      "sha256": "56035299a6a0df40f030bbdd1ca61746636c944d144a878ba9296e60a052e3f7"
     }
   },
   "eu.kanade.tachiyomi.extension.fr.aniverse": {
